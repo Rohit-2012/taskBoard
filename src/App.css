@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  font-family: "Protest Revolution", sans-serif;
+  padding: 1rem;
+}
+
+.heading {
+  font-size: 40px;
+  color: #fff;
+  z-index: 1;
+}
+
+@media (width <= 800px) {
+    .heading {
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,152 @@
+.input {
+  display: flex;
+  width: 95%;
+  position: relative;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.input__box {
+  width: 100%;
+  border-radius: 50px;
+  padding: 1rem;
+  font-size: 25px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
+}
+
+.input__box:focus {
+  box-shadow: 0 0 10px 1000px rgb(20, 20, 20);
+  outline: none;
+}
+
+.input__submit {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 50%;
+  right: 0;
+  border: none;
+  font-size: 15px;
+  background-color: #333;
+  color: #fff;
+  transition: 0.2s all;
+  box-shadow: 0 0 10px black;
+  cursor: pointer;
+}
+
+.input__submit:hover {
+  background-color: #424242;
+}
+
+.input__submit:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px black;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  width: 47.1%;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(224, 90, 90);
+}
+
+.todos__heading {
+  font-size: 30px;
+  color: #fff;
+}
+
+.todos__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background: linear-gradient(90deg, rgb(39, 39, 39), #000000);
+  transition: 0.2s;
+}
+
+.todos__form:hover {
+  box-shadow: 0 0 5px black;
+  transform: scale(1.03);
+}
+
+.todos__task {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+}
+.todos__edit {
+  border: 2px solid rgb(83, 162, 207);
+  border-radius: 5px;
+  padding: 1rem;
+  height: 2rem;
+  width: 65%;
+  font-size: 20px;
+}
+.todos__task:focus {
+  outline: none;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.completed {
+  background-color: rgb(63, 153, 78);
+}
+
+.dragActive {
+  background-color: rgb(155, 59, 59);
+}
+
+.dragCompleted {
+  background-color: rgb(42, 99, 51);
+}
+
+.drag {
+  background: linear-gradient(90deg, rgb(66, 66, 66), #1d1d1d);
+}
+
+@media (width < 1200px) {
+  .todos {
+    width: 45%;
+  }
+}
+
+@media (width <= 700px) {
+  .input {
+    width: 95%;
+  }
+
+  .todos {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    width: 95%;
+    flex-direction: column;
+  }
+  .icon {
+    font-size: 16px;
+  }
+}
